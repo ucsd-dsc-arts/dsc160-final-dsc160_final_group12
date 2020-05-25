@@ -4,10 +4,10 @@ DSC160 Data Science and the Arts - Final Project - Generative Arts - Spring 2020
 
 Project Team Members: 
 - Mariam Qader, maqader@ucsd.edu
-- Firstname Lastname2, name2@ucsd.edu
-- Firstname Lastname3, name3@ucsd.edu
-- Firstname Lastname4, name4@ucsd.edu
-- Firstname Lastname5, name5@ucsd.edu
+- Molly Rowland, mhrowlan@ucsd.edu
+- Myra Haider, myhaider@ucsd.edu
+- Enrique Sanchez, ens004@ucsd.edu
+- Alexandria Kim, aek005@ucsd.edu
 
 ## Abstract
 
