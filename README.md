@@ -11,20 +11,29 @@ Project Team Members:
 
 ## Abstract
 
-(10 points) 
+For our generative art project, we are interested in the condition synesthesia. This is the condition where a person’s senses are mixed, such as tasting color, or hearing textures. It affects “at least 4% of the population” of the US and there are more than 50 forms of synesthesia(Wu). One way to help others understand this condition, is by using generative art methods to create synthetic synesthesia for those who don’t have the condition. 
+We plan to make a neural network to transform text and sound to color. Many of the articles we found on this subject discuss using GAN to create the deep learning model. One of the papers discusses taking a database of handwritten characters, implemented as a multilayer convolutional neural network, and having a separate multilayer convolutional neural network to create a colored version of the text based on a grapheme-color synesthetes(Bock). We also found an example of someone taking an audio file and creating images of landscapes and humans (Laken). From these two examples, we hope to combine them to create our own responsive model. In order to convert sound to color, we can use the frequency of a note to generate a hexadecimal or RGB value. An important observation to note is that the mapping of a sound to color varies amongst individuals, so we will attempt to create a model that arbitrarily generates this mapping. Spectrograms are an example we have seen in class of audio being represented visually. We’d like to build upon this idea by focusing on notes instead of just waveforms, as well as using the relationship between color and sound to replicate synesthesia. AudioPaint by Nicolas Fournel is a similar example that converts images to sound, translating attributes such as brightness and pixel position to volume and frequency. 
+Our current plan is to arbitrarily assign each letter to a note and color. From this, when a word is entered, we will return some pattern of notes and colors. The user can input a word of their choice, and our model will output an image containing the colors associated with the letters in the word (e.g. https://synesthesia.me/see-your-name). Additionally, we would like to incorporate sound into our project by having a song played as well. Each letter will be associated with a single note. Our model will play a mini phrase of the combination of notes according to the word the user input. Therefore, the output will be both visual and vocal. Our goal is to make an interactive widget through Python libraries like Holoviz that will produce a jpg image of colors and a .wav sound file based on the user inputed text. Some challenges that may arise while working on this project include finding enough images that contain the colors associated with the words inputted. We may have to create some parameters as to what words are acceptable to input (i.e. maximum length of 10 letters). Through our project we hope to take both the technical and qualitative skills we have been shown in class and apply them to our area of interest. We will be using GAN to implement our project to help us gain a greater understanding of synthesia and how it affects the people around us. Many of the example projects shown in class help us understand different people and cultures through technology, which is exactly what we hope to achieve here. Synesthesia is an interesting condition to study as it provides insight into how the brain perceives things. It gives us a chance to see how people with this condition perceive the world, and helps us understand how the world can look very different to everyone. This project will also allow us to learn more about the condition, and the effects it has on different people. 
+List three papers / art projects that are references for this work.
+https://towardsdatascience.com/synesthesia-an-inspiring-condition-for-ai-researchers-10cd57708855
+https://www.mdpi.com/2504-2289/2/1/8/pdf 
+https://synesthesia.me/see-your-name
+https://www.medicalnewstoday.com/articles/322807#Mechanisms-and-causes
+https://www.livescience.com/60707-what-is-synesthesia.html
+https://panel.holoviz.org/
+https://paulvanderlaken.com/2019/10/29/neural-synthesia-gan-ai-dreaming-of-music/
+https://designingsound.org/2017/12/20/mapping-sound-to-color/
+http://www.nicolasfournel.com/?page_id=125#comment-4827
 
-For the project proposal, please write a short abstact addressing the questions below. You need to replace the entire contents of this section with one to two paragraphs addressing the following:
 
-- What is your concept for a generative art project? 
-- What methods/networks/techniques will you employ (include links to technical precedents/code bases)
-- What training data (if any) will you use for your project? 
-- What kind of results do you hope that your system will produce?
-- How will you present your result/what form will your output take?
-- What if any challenges to you think may arise as you are working with this?
-- How are you expanding on topics we have covered in class? 
-- Why is it interesting? (personally, culturally, politically, other)
-- List three papers / art projects that are references for this work.
 
+
+
+Works Cited
+Bock, Joel R. “A Deep Learning Model of Perception in Color-Letter Synesthesia.” 2017, doi:10.20944/preprints201712.0128.v1.
+Laken, Paul van der. “Neural Synesthesia: GAN AI Dreaming of Music.” Paulvanderlaken.com, 30 Oct. 2019, paulvanderlaken.com/2019/10/29/neural-synthesia-gan-ai-dreaming-of-music/.
+“Type Your Name.” What Color Is Your Name?, synesthesia.me/see-your-name.
+Wu, Jun. “Synesthesia, An Inspiring Condition For AI Researchers.” Medium, Towards Data Science, 27 Jan. 2020, towardsdatascience.com/synesthesia-an-inspiring-condition-for-ai-researchers-10cd57708855.
 ## Data and Model
 
 (10 points) 
