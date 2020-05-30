@@ -34,7 +34,7 @@ def input_data():
         
         else:
             global filepath
-            filepath = 'data/temp/'+file_input.filename
+            filepath = file_input.filename
             file_input.save(filepath)
         
         return file_input
