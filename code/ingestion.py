@@ -1,7 +1,7 @@
 """ Image Ingestion
 
-ingestion.py allows users to upload an image of 
-their choice
+ingestion.py allows users to generate and upload an 
+image of their choice
 
 """
 
@@ -10,6 +10,35 @@ import pandas as pd
 import numpy as np
 import panel as pn
 pn.extension()
+
+import holoviews as hv
+from holoviews import opts
+from holoviews import streams
+hv.extension('bokeh')
+
+
+
+def draw():
+    """
+    Allows users to draw and download an image
+    of their choice
+    
+    :returns: Widget to draw
+    """
+    
+    # Creating widget
+    path = hv.Path([])
+    freehand = streams.FreehandDraw(source=path, num_objects=20,
+                                    styles={'line_color': ['black']})
+    
+    # Customizing
+    path.opts(
+    opts.Path(active_tools=['freehand_draw'], height=400, 
+              line_width=8, width=400, xaxis=None, yaxis=None))
+    
+    return path
+
+    
 
 filepath = ''
 def input_data():
