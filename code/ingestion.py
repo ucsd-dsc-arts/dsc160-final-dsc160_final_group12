@@ -28,7 +28,7 @@ def draw():
     
     # Creating widget
     path = hv.Path([])
-    freehand = streams.FreehandDraw(source=path, num_objects=20,
+    freehand = streams.FreehandDraw(source=path, num_objects=100,
                                     styles={'line_color': ['black']})
     
     # Customizing
