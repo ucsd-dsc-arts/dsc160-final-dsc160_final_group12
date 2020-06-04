@@ -8,17 +8,19 @@ import editdistance
 from DataLoader import DataLoader, Batch
 from Model import Model, DecoderType
 from SamplePreprocessor import preprocess
+import logging
 import tensorflow as tf
+tf.get_logger().setLevel(logging.ERROR)
 
 
 
 class FilePaths:
     "filenames and paths to data"
-    fnCharList = '/Users/mollyrowland/Downloads/GitHub/dsc160-final-dsc160_final_group12/code/SimpleHTR/model/charList.txt'
-    fnAccuracy = '/Users/mollyrowland/Downloads/GitHub/dsc160-final-dsc160_final_group12/code/SimpleHTR/model/accuracy.txt'
-    fnTrain = '/Users/mollyrowland/Downloads/GitHub/dsc160-final-dsc160_final_group12/code/SimpleHTR/data/'
-    fnInfer = '/Users/mollyrowland/Downloads/GitHub/dsc160-final-dsc160_final_group12/code/SimpleHTR/data/test3.png'
-    fnCorpus = '/Users/mollyrowland/Downloads/GitHub/dsc160-final-dsc160_final_group12/code/SimpleHTR/data/corpus.txt'
+    fnCharList = '../model/charList.txt'
+    fnAccuracy = '../model/accuracy.txt'
+    fnTrain = '../data/'
+    fnInfer = '../data/text_image.png'
+    fnCorpus = '../data/corpus.txt'
 
     
 
@@ -97,7 +99,11 @@ def infer(model, fnImg):
     "recognize text in image provided by file path"
     img = preprocess(cv2.imread(fnImg, cv2.IMREAD_GRAYSCALE), Model.imgSize)
     batch = Batch(None, [img])
-    (recognized, probability) = model.inferBatch(batch, True)
+    model_infer = model.inferBatch(batch, True)
+    if len(model_infer) == 3:
+        (recognized, probability, _) = model_infer
+    else:
+        (recognized, probability) = model_infer
     print('Recognized:', '"' + recognized[0] + '"')
     print('Probability:', probability[0])
 

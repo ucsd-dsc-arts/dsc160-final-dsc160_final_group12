@@ -8,6 +8,8 @@ image of their choice
 # Importing scripts
 import pandas as pd
 import numpy as np
+from skimage import io
+from skimage.transform import resize
 import panel as pn
 pn.extension()
 
@@ -34,7 +36,7 @@ def draw():
     # Customizing
     path.opts(
     opts.Path(active_tools=['freehand_draw'], height=219, 
-              line_width=8, width=519, xaxis=None, yaxis=None))
+              line_width=20, width=519, xaxis=None, yaxis=None))
     
     return path
 
@@ -62,9 +64,13 @@ def input_data():
             return file_input
         
         else:
+            #Saving and converting image
             global filepath
-            filepath = file_input.filename
+            filepath = '../data/text_image.png'
             file_input.save(filepath)
+            image = io.imread(filepath)
+            resized_image = resize(image, (73, 173))
+            io.imsave(fname=filepath, arr=resized_image)
         
         return file_input
     

@@ -17,7 +17,7 @@ from SamplePreprocessor import preprocess
 class Constants:
     "filenames and paths to data"
     fnCharList = '../model/charList.txt'
-    fnAnalyze = '../data/test3.png'
+    fnAnalyze = '../data/text_image.png'
     fnPixelRelevance = '../data/pixelRelevance.npy'
     fnTranslationInvariance = '../data/translationInvariance.npy'
     fnTranslationInvarianceTexts = '../data/translationInvarianceTexts.pickle'
