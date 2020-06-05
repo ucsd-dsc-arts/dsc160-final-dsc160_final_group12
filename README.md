@@ -12,9 +12,15 @@ Project Team Members:
 ## Abstract
 
 For our generative art project, we are interested in the condition synesthesia. This is the condition where a person’s senses are mixed, such as tasting color, or hearing textures. It affects “at least 4% of the population” of the US and there are more than 50 forms of synesthesia (Wu). One way to help others understand this condition, is by using generative art methods to create synthetic synesthesia for those who don’t have the condition. 
-We plan to make a neural network to transform text to color. Many of the articles we found on this subject discuss using GAN to create the deep learning model. One of the papers discusses taking a database of handwritten characters, implemented as a multilayer convolutional neural network, and having a separate multilayer convolutional neural network to create a colored version of the text based on a grapheme-color synesthetes(Bock). From this example, we hope to create our own responsive model.
-Our current plan is to arbitrarily assign each letter to a note and color. From this, when a word is entered, we will return some pattern of notes and colors. The user can input a word of their choice, and our model will output an image containing the colors associated with the letters in the word (e.g. https://synesthesia.me/see-your-name). Additionally, we would like to incorporate sound into our project by having a song played as well. Each letter will be associated with a single note. Our model will play a mini phrase of the combination of notes according to the word the user input. Therefore, the output will be both visual and vocal. Our goal is to make an interactive widget through Python libraries like Holoviz that will produce a jpg image of colors and a .wav sound file based on the user inputed text. Some challenges that may arise while working on this project include finding enough images that contain the colors associated with the words inputted. We may have to create some parameters as to what words are acceptable to input (i.e. maximum length of 10 letters). Through our project we hope to take both the technical and qualitative skills we have been shown in class and apply them to our area of interest. We will be using GAN to implement our project to help us gain a greater understanding of synthesia and how it affects the people around us. Many of the example projects shown in class help us understand different people and cultures through technology, which is exactly what we hope to achieve here. Synesthesia is an interesting condition to study as it provides insight into how the brain perceives things. It gives us a chance to see how people with this condition perceive the world, and helps us understand how the world can look very different to everyone. This project will also allow us to learn more about the condition, and the effects it has on different people. 
-List three papers / art projects that are references for this work.
+We plan to make a neural network to transform text to color. Many of the articles we found on this subject discuss using GAN to create the deep learning model. One of the papers discusses taking a database of handwritten characters, implemented as a multilayer convolutional neural network, and having a separate multilayer convolutional neural network to create a colored version of the text based on a grapheme-color synesthetes (Bock). From this example, we hope to create our own responsive model.
+
+Our plan is to build a text recognition system and create a model that outputs a colored visual of a word. The user can input a word of their choice, and our model will output the word containing the colors associated with the letters in the word (e.g. https://synesthesia.me/see-your-name). The user will draw a word of their choice and then upload this image to our model. Our model, trained on names of objects, will then determine what word was written and translate it to text.
+
+Our goal is to make an interactive widget through Python libraries like Holoviz that will produce a jpg image of colors file based on the user inputed handwritten text. Some challenges that may arise while working on this project include training the text recognition system to accurately determine the words. We may have to create some parameters as to what words are acceptable to input (i.e. maximum length of 10 letters).
+
+Through our project we hope to take both the technical and qualitative skills we have been shown in class and apply them to our area of interest. We will be using GAN to implement our project to help us gain a greater understanding of synthesia and how it affects the people around us. Many of the example projects shown in class help us understand different people and cultures through technology, which is exactly what we hope to achieve here. Synesthesia is an interesting condition to study as it provides insight into how the brain perceives things. It gives us a chance to see how people with this condition perceive the world, and helps us understand how the world can look very different to everyone. This project will also allow us to learn more about the condition, and the effects it has on different people. 
+
+References:
 https://towardsdatascience.com/synesthesia-an-inspiring-condition-for-ai-researchers-10cd57708855
 https://www.mdpi.com/2504-2289/2/1/8/pdf 
 https://synesthesia.me/see-your-name
@@ -24,9 +30,6 @@ https://panel.holoviz.org/
 https://paulvanderlaken.com/2019/10/29/neural-synthesia-gan-ai-dreaming-of-music/
 https://designingsound.org/2017/12/20/mapping-sound-to-color/
 http://www.nicolasfournel.com/?page_id=125#comment-4827
-
-
-
 
 
 Works Cited
