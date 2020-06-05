@@ -21,15 +21,15 @@ Our goal is to make an interactive widget through Python libraries like Holoviz 
 Through our project we hope to take both the technical and qualitative skills we have been shown in class and apply them to our area of interest. We will be using GAN to implement our project to help us gain a greater understanding of synthesia and how it affects the people around us. Many of the example projects shown in class help us understand different people and cultures through technology, which is exactly what we hope to achieve here. Synesthesia is an interesting condition to study as it provides insight into how the brain perceives things. It gives us a chance to see how people with this condition perceive the world, and helps us understand how the world can look very different to everyone. This project will also allow us to learn more about the condition, and the effects it has on different people. 
 
 References:
-https://towardsdatascience.com/synesthesia-an-inspiring-condition-for-ai-researchers-10cd57708855
-https://www.mdpi.com/2504-2289/2/1/8/pdf 
-https://synesthesia.me/see-your-name
-https://www.medicalnewstoday.com/articles/322807#Mechanisms-and-causes
-https://www.livescience.com/60707-what-is-synesthesia.html
-https://panel.holoviz.org/
-https://paulvanderlaken.com/2019/10/29/neural-synthesia-gan-ai-dreaming-of-music/
-https://designingsound.org/2017/12/20/mapping-sound-to-color/
-http://www.nicolasfournel.com/?page_id=125#comment-4827
+- https://towardsdatascience.com/synesthesia-an-inspiring-condition-for-ai-researchers-10cd57708855
+- https://www.mdpi.com/2504-2289/2/1/8/pdf 
+- https://synesthesia.me/see-your-name
+- https://www.medicalnewstoday.com/articles/322807#Mechanisms-and-causes
+- https://www.livescience.com/60707-what-is-synesthesia.html
+- https://panel.holoviz.org/
+- https://paulvanderlaken.com/2019/10/29/neural-synthesia-gan-ai-dreaming-of-music/
+- https://designingsound.org/2017/12/20/mapping-sound-to-color/
+- http://www.nicolasfournel.com/?page_id=125#comment-4827
 
 
 Works Cited
