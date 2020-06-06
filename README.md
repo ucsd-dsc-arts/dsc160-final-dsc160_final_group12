@@ -93,13 +93,6 @@ Any implementation details or notes we need to repeat your work.
 
 ## Reference
 
-All references to papers, techniques, previous work, repositories you used should be collected at the bottom:
-
-- Papers
-- Repositories
-- Blog posts
-
-
 - https://www.researchgate.net/publication/323737970_A_Deep_Learning_Model_of_Perception_in_Color-Letter_Synesthesia
 - https://towardsdatascience.com/synesthesia-an-inspiring-condition-for-ai-researchers-10cd57708855
 - https://www.mdpi.com/2504-2289/2/1/8/pdf 
