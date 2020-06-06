@@ -12,9 +12,9 @@ import logging
 import tensorflow as tf
 tf.get_logger().setLevel(logging.ERROR)
 from turtle import *
-#import random
+import random
 import pandas as pd
-from draw import draw_word
+from draw import draw_turtle
 
 
 
@@ -166,20 +166,20 @@ def main():
         
         word, probablity=infer(model, FilePaths.fnInfer)
         
-        letter_color_map = {'a': 'aqua', 'b': 'azure', 'c': 'beige', 
-                    'd': 'black','e': 'blue', 'f': 'brown', 
-                    'g': 'chartreuse', 'h': 'chocolate', 'i': 'coral', 
-                    'j': 'crimson', 'k': 'cyan', 'l': 'darkblue', 
-                    'm': 'darkgreen', 'n': 'fuchsia', 'o': 'gold', 
-                    'p': 'goldenrod', 'q': 'green', 'r': 'grey', 
-                    's': 'indigo', 't': 'ivory', 'u': 'lavender', 
-                    'v': 'lightblue', 'w': 'lightgreen', 'x': 'maroon', 
-                    'y': 'olive', 'z': 'orange'}
+        letter_color_map = {'a': 'red', 'b': 'blue', 'c': 'yellow', 
+                'd': 'blue', 'e': 'green', 'f': 'green', 
+                'g': 'green', 'h': 'orange', 'i': 'yellow', 
+                'j': 'orange', 'k': 'orange', 'l': 'yellow', 
+                'm': 'red', 'n': 'orange', 'o': 'white', 
+                'p': 'purple', 'q': 'purple', 'r': 'red', 
+                's': 'yellow', 't': 'blue', 'u': 'orange', 
+                'v': 'purple', 'w': 'blue', 'x': 'black', 
+                'y': 'yellow', 'z': 'black'}
         word= word.lower()
         letters= list(word)
         colors=list((pd.Series(letters)).map(letter_color_map))
         print(colors)
-        draw_word(colors)
+        draw_turtle(colors)
         
     
     

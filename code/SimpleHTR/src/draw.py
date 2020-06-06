@@ -1,6 +1,9 @@
-from random import choice
-def draw_word(colors):
-    
+#from turtle import *
+import random
+import pandas as pd
+from mobilechelonian import Turtle
+
+"""def draw_word(colors):
     number= random.choice([0,1,2])
     if number==1:
         #draw hexogram-sprial
@@ -14,14 +17,14 @@ def draw_word(colors):
         t1.speed(0)
         for i in range (200):
             #choose a random color for the turtle
-            colorchoice = choice(colors)
+            colorchoice = random.choice(colors)
             #have the turtle take on the randomly chose color
             t1.color(colorchoice)
             t1.forward(i)
             t1.left(59)
         #t1.done()
         try:
-            t1.exitonclick()   
+            exitonclick()   
         except Excpetion:
             pass
     elif number==2:
@@ -41,7 +44,7 @@ def draw_word(colors):
         #create a loop for the graphics to be built
         for i in range(50):
             #choose a random color for the turtle
-            colorchoice = choice(colors)
+            colorchoice = random.choice(colors)
             #have the turtle take on the randomly chose color
             t1.color(colorchoice)
             #create circle
@@ -50,7 +53,7 @@ def draw_word(colors):
 
         #t1.done()
         try:
-            t1.exitonclick()   
+            exitonclick()   
         except Excpetion:
             pass
     else:
@@ -75,7 +78,7 @@ def draw_word(colors):
         #create a loop for the graphics to be built
         for i in range(500):
             #choose a random color for the turtle
-            colorchoice = choice(colors)
+            colorchoice = random.choice(colors)
             #have the turtle take on the randomly chose color
             t1.color(colorchoice)
             #move the turtle forward
@@ -85,6 +88,61 @@ def draw_word(colors):
 
         #t1.done() 
         try:
-            t1.exitonclick()   
+            exitonclick()   
         except Excpetion:
-            pass
+            pass"""
+        
+def draw_turtle(colors):
+    number= random.choice([0,1,2])
+    if number==1:
+        #draw hexogram-sprial
+        t1=Turtle()
+        t1.speed(10)
+        for i in range (200):
+            #choose a random color for the turtle
+            colors=['yellow', 'blue', 'red', 'orange', 'yellow', 'green', 'yellow']
+            colorchoice = random.choice(colors)
+            #have the turtle take on the randomly chose color
+            t1.pencolor(colorchoice)
+            t1.forward(i)
+            t1.left(59)
+        
+    elif number==2:
+        #draw color spirograph
+        t1 = Turtle()
+        
+        t1.speed(10)
+
+        #create a loop for the graphics to be built
+        for i in range(50):
+            #choose a random color for the turtle
+            colorchoice = random.choice(colors)
+            #have the turtle take on the randomly chose color
+            t1.pencolor(colorchoice)
+            #create circle
+            t1.circle(90)
+            t1.left(10)
+
+       
+    else:
+        #color wheel
+        t1 = Turtle()
+        
+        t1.penup()
+        
+        t1.pendown()
+        
+        t1.speed(10)
+
+        #create a loop for the graphics to be built
+        for i in range(500):
+            #choose a random color for the turtle
+            colorchoice = random.choice(colors)
+            #have the turtle take on the randomly chose color
+            t1.pencolor(colorchoice)
+            #move the turtle forward
+            t1.forward(350)
+            #have the turtle turn 181 degrees (anything over 180 works)
+            t1.right(181)
+
+        
