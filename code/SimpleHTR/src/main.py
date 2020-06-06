@@ -174,7 +174,10 @@ def main():
                 'p': 'purple', 'q': 'purple', 'r': 'red', 
                 's': 'yellow', 't': 'blue', 'u': 'orange', 
                 'v': 'purple', 'w': 'blue', 'x': 'black', 
-                'y': 'yellow', 'z': 'black'}
+                'y': 'yellow', 'z': 'black',
+                '0': 'white', '1': 'maroon', '2': 'goldenrod',
+                '4': 'firebrick', '5': 'darkblue', '6': 'papayawhip',
+                '7': 'midnightblue', '8': 'darkred', '9': 'yellow'}
         word= word.lower()
         letters= list(word)
         colors=list((pd.Series(letters)).map(letter_color_map))
