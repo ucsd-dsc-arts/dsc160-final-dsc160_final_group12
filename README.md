@@ -54,7 +54,7 @@ Link each of these items to your .ipynb or .py files within this seection, and p
 
 **Data Acquisition/Preprocessing**
 
-ingestion.py: Scripts that enables the user to hand write their own text, save it, and upload it into the text recognition model. Resizes and manipulates the image autamitcally to conform to model requirements. Widgets are made available through the Holoviz and Bokeh Python libraries.
+ingestion.py: Script that enables the user to hand write their own text, save it, and upload it into the text recognition model. Resizes and manipulates the image autamitcally to conform to model requirements. Widgets are made available through the Holoviz and Bokeh Python libraries.
 
 ## Results
 
