@@ -106,6 +106,8 @@ def infer(model, fnImg):
         (recognized, probability) = model_infer
     print('Recognized:', '"' + recognized[0] + '"')
     print('Probability:', probability[0])
+    
+    return recognized, probability
 
 
 def main():
@@ -153,6 +155,8 @@ def main():
         tf.compat.v1.reset_default_graph()
         model = Model(open(FilePaths.fnCharList).read(), decoderType, mustRestore=True, dump=args.dump)
         infer(model, FilePaths.fnInfer)
+        print('done')
+        return infer
 
 
 if __name__ == '__main__':
