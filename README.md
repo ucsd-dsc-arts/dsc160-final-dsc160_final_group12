@@ -1,4 +1,4 @@
-# Synesthesia: From Handwritten Text to Colorful Design
+# Synthetic Synesthesia: From Handwritten Text to Colorful Design
 
 DSC160 Data Science and the Arts - Final Project - Generative Arts - Spring 2020
 
