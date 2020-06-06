@@ -104,3 +104,4 @@ Any implementation details or notes we need to repeat your work.
 - https://designingsound.org/2017/12/20/mapping-sound-to-color/
 - http://www.nicolasfournel.com/?page_id=125#comment-4827
 - https://www.frontiersin.org/articles/10.3389/fnhum.2013.00603/full
+- https://pdfs.semanticscholar.org/68d9/396eb744db2c586deec3d3fba250f7d33489.pdf
