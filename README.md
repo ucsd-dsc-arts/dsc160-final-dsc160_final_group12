@@ -1,4 +1,4 @@
-# Project Title
+# Synesthesia: From handwritten text to colorful design
 
 DSC160 Data Science and the Arts - Final Project - Generative Arts - Spring 2020
 
@@ -11,7 +11,7 @@ Project Team Members:
 
 ## Abstract
 
-For our generative art project, we are interested in the condition synesthesia. This is the condition where a person’s senses are mixed, such as tasting color, or hearing textures. It affects “at least 4% of the population” of the US and there are more than 50 forms of synesthesia (Wu). Grapheme-color synesthesia is the specific condition in which people experience colors when thinking about letters, numbers or words. One way to help others understand this condition, is by using generative art methods to create synthetic synesthesia for those who don’t have the condition. 
+For our generative art project, we are interested in the condition synesthesia. This is the condition where a person’s senses are mixed, such as tasting color, or hearing textures. It affects “at least 4% of the population” of the US and there are more than 50 forms of synesthesia (Wu). Grapheme-color synesthesia is the specific condition in which people experience colors when thinking about letters, numbers or words (Simner & bain). One way to help others understand this condition, is by using generative art methods to create synthetic synesthesia for those who don’t have the condition. 
 
 We plan to make a neural network to transform text to color. Many of the articles we found on this subject discuss using GAN to create the deep learning model. One of the papers discusses taking a database of handwritten characters, implemented as a multilayer convolutional neural network, and having a separate multilayer convolutional neural network to create a colored version of the text based on a grapheme-color synesthetes (Bock). From this example, we hope to create our own responsive model.
 
