@@ -12,6 +12,7 @@ Project Team Members:
 ## Abstract
 
 For our generative art project, we are interested in the condition synesthesia. This is the condition where a person’s senses are mixed, such as tasting color, or hearing textures. It affects “at least 4% of the population” of the US and there are more than 50 forms of synesthesia (Wu). One way to help others understand this condition, is by using generative art methods to create synthetic synesthesia for those who don’t have the condition. 
+
 We plan to make a neural network to transform text to color. Many of the articles we found on this subject discuss using GAN to create the deep learning model. One of the papers discusses taking a database of handwritten characters, implemented as a multilayer convolutional neural network, and having a separate multilayer convolutional neural network to create a colored version of the text based on a grapheme-color synesthetes (Bock). From this example, we hope to create our own responsive model.
 
 Our plan is to build a text recognition system and create a model that outputs a colored visual of a word. The user can input a word of their choice, and our model will output the word containing the colors associated with the letters in the word (e.g. https://synesthesia.me/see-your-name). The user will draw a word of their choice and then upload this image to our model. Our model, trained on names of objects, will then determine what word was written and translate it to text.
@@ -20,23 +21,12 @@ Our goal is to make an interactive widget through Python libraries like Holoviz 
 
 Through our project we hope to take both the technical and qualitative skills we have been shown in class and apply them to our area of interest. We will be using GAN to implement our project to help us gain a greater understanding of synthesia and how it affects the people around us. Many of the example projects shown in class help us understand different people and cultures through technology, which is exactly what we hope to achieve here. Synesthesia is an interesting condition to study as it provides insight into how the brain perceives things. It gives us a chance to see how people with this condition perceive the world, and helps us understand how the world can look very different to everyone. This project will also allow us to learn more about the condition, and the effects it has on different people. 
 
-References:
-- https://towardsdatascience.com/synesthesia-an-inspiring-condition-for-ai-researchers-10cd57708855
-- https://www.mdpi.com/2504-2289/2/1/8/pdf 
-- https://synesthesia.me/see-your-name
-- https://www.medicalnewstoday.com/articles/322807#Mechanisms-and-causes
-- https://www.livescience.com/60707-what-is-synesthesia.html
-- https://panel.holoviz.org/
-- https://paulvanderlaken.com/2019/10/29/neural-synthesia-gan-ai-dreaming-of-music/
-- https://designingsound.org/2017/12/20/mapping-sound-to-color/
-- http://www.nicolasfournel.com/?page_id=125#comment-4827
-
-
 Works Cited
 Bock, Joel R. “A Deep Learning Model of Perception in Color-Letter Synesthesia.” 2017, doi:10.20944/preprints201712.0128.v1.
 Laken, Paul van der. “Neural Synesthesia: GAN AI Dreaming of Music.” Paulvanderlaken.com, 30 Oct. 2019, paulvanderlaken.com/2019/10/29/neural-synthesia-gan-ai-dreaming-of-music/.
 “Type Your Name.” What Color Is Your Name?, synesthesia.me/see-your-name.
 Wu, Jun. “Synesthesia, An Inspiring Condition For AI Researchers.” Medium, Towards Data Science, 27 Jan. 2020, towardsdatascience.com/synesthesia-an-inspiring-condition-for-ai-researchers-10cd57708855.
+
 ## Data and Model
 
 (10 points) 
@@ -46,6 +36,8 @@ In the final submission, this section will describe both the data you use for th
   - [link to code]().
   - [Title of Paper with Link](). 
 - Training data. Short description of training data including bibliographic info. [link to data]().
+
+**User Handwritten Text:** Image of handwritten text that is created by the user and passed into the text recognition model.
 
 ## Code
 
@@ -59,6 +51,10 @@ This section will link to the various code for your project (stored within this 
 - generative methods
 
 Link each of these items to your .ipynb or .py files within this seection, and provide a brief explanation of what the code does. Reading this section we should have a sense of how to run your code.
+
+**Data Acquisition/Preprocessing**
+
+ingestion.py: Script that enables the user to hand write their own text, save it, and upload it into the text recognition model. Resizes and manipulates the image autamitcally to conform to model requirements. Widgets are made available through the Holoviz and Bokeh Python libraries.
 
 ## Results
 
@@ -97,6 +93,19 @@ Any implementation details or notes we need to repeat your work.
 ## Reference
 
 All references to papers, techniques, previous work, repositories you used should be collected at the bottom:
+
 - Papers
 - Repositories
 - Blog posts
+
+
+- https://www.researchgate.net/publication/323737970_A_Deep_Learning_Model_of_Perception_in_Color-Letter_Synesthesia
+- https://towardsdatascience.com/synesthesia-an-inspiring-condition-for-ai-researchers-10cd57708855
+- https://www.mdpi.com/2504-2289/2/1/8/pdf 
+- https://synesthesia.me/see-your-name
+- https://www.medicalnewstoday.com/articles/322807#Mechanisms-and-causes
+- https://www.livescience.com/60707-what-is-synesthesia.html
+- https://panel.holoviz.org/
+- https://paulvanderlaken.com/2019/10/29/neural-synthesia-gan-ai-dreaming-of-music/
+- https://designingsound.org/2017/12/20/mapping-sound-to-color/
+- http://www.nicolasfournel.com/?page_id=125#comment-4827
