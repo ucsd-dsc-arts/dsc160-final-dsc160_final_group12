@@ -11,7 +11,7 @@ Project Team Members:
 
 ## Abstract
 
-For our generative art project, we are interested in the condition synesthesia. This is the condition where a person’s senses are mixed, such as tasting color, or hearing textures. It affects “at least 4% of the population” of the US and there are more than 50 forms of synesthesia (Wu). One way to help others understand this condition, is by using generative art methods to create synthetic synesthesia for those who don’t have the condition. 
+For our generative art project, we are interested in the condition synesthesia. This is the condition where a person’s senses are mixed, such as tasting color, or hearing textures. It affects “at least 4% of the population” of the US and there are more than 50 forms of synesthesia (Wu). Grapheme-color synesthesia is the specific condition in which people experience colors when thinking about letters, numbers or words. One way to help others understand this condition, is by using generative art methods to create synthetic synesthesia for those who don’t have the condition. 
 
 We plan to make a neural network to transform text to color. Many of the articles we found on this subject discuss using GAN to create the deep learning model. One of the papers discusses taking a database of handwritten characters, implemented as a multilayer convolutional neural network, and having a separate multilayer convolutional neural network to create a colored version of the text based on a grapheme-color synesthetes (Bock). From this example, we hope to create our own responsive model.
 
@@ -26,6 +26,7 @@ Through our project we hope to take both the technical and qualitative skills we
 - Laken, Paul van der. “Neural Synesthesia: GAN AI Dreaming of Music.” Paulvanderlaken.com, 30 Oct. 2019, paulvanderlaken.com/2019/10/29/neural-synthesia-gan-ai-dreaming-of-music/.
 - “Type Your Name.” What Color Is Your Name?, synesthesia.me/see-your-name.
 - Wu, Jun. “Synesthesia, An Inspiring Condition For AI Researchers.” Medium, Towards Data Science, 27 Jan. 2020, towardsdatascience.com/synesthesia-an-inspiring-condition-for-ai-researchers-10cd57708855.
+- Simner, Julia, and Angela E. Bain. “A Longitudinal Study of Grapheme-Color Synesthesia in Childhood: 6/7 Years to 10/11 Years.” Frontiers, Frontiers, 4 Sept. 2013, www.frontiersin.org/articles/10.3389/fnhum.2013.00603/full.
 
 ## Data and Model
 
@@ -109,3 +110,4 @@ All references to papers, techniques, previous work, repositories you used shoul
 - https://paulvanderlaken.com/2019/10/29/neural-synthesia-gan-ai-dreaming-of-music/
 - https://designingsound.org/2017/12/20/mapping-sound-to-color/
 - http://www.nicolasfournel.com/?page_id=125#comment-4827
+- https://www.frontiersin.org/articles/10.3389/fnhum.2013.00603/full
