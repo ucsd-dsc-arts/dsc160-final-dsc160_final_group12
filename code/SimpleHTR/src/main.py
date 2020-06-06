@@ -12,8 +12,9 @@ import logging
 import tensorflow as tf
 tf.get_logger().setLevel(logging.ERROR)
 from turtle import *
-import random
+#import random
 import pandas as pd
+from draw import draw_word
 
 
 
@@ -109,12 +110,12 @@ def infer(model, fnImg):
         (recognized, probability) = model_infer
     print('Recognized:', '"' + recognized[0] + '"')
     print('Probability:', probability[0])
-<<<<<<< HEAD
+#<<<<<<< HEAD
     return (recognized[0],probability[0])
-=======
+#=======
     
-    return recognized, probability
->>>>>>> dd4c864796fc22fde4e234ed174af7acbc414cb4
+    #return recognized, probability
+#>>>>>>> dd4c864796fc22fde4e234ed174af7acbc414cb4
 
 
 def main():
@@ -161,7 +162,7 @@ def main():
         #print(open(FilePaths.fnAccuracy).read())
         tf.compat.v1.reset_default_graph()
         model = Model(open(FilePaths.fnCharList).read(), decoderType, mustRestore=True, dump=args.dump)
-<<<<<<< HEAD
+#<<<<<<< HEAD
         
         word, probablity=infer(model, FilePaths.fnInfer)
         
@@ -178,105 +179,15 @@ def main():
         letters= list(word)
         colors=list((pd.Series(letters)).map(letter_color_map))
         print(colors)
-        number= random.choice([0,1,2])
-        if number==1:
-            #draw hexogram-sprial
-            setup()
-            title("hexogram sprial")
-            t1 = Turtle()
-            bgcolor('black')
-
-            #hide the turtle icon
-            t1.hideturtle()
-            t1.speed(0)
-            for i in range (200):
-                #choose a random color for the turtle
-                colorchoice = random.choice(colors)
-                #have the turtle take on the randomly chose color
-                t1.color(colorchoice)
-                t1.forward(i)
-                t1.left(59)
-            #t1.done()
-            try:
-                t1.exitonclick()   
-            except Excpetion:
-                pass
-        elif number==2:
-            #draw color spirograph
-            setup()
-            title("spirograph")
-            #create a turtle for drawing
-            t1 = Turtle()
-            bgcolor('black')
-            #change the pen thickness
-            t1.width(2)
-            #hide the turtle icon
-            t1.hideturtle()
-            #set turtle speed to MAXIMUM (1-10 for specific speeds. 1 is slowest)
-            t1.speed(0)
-
-            #create a loop for the graphics to be built
-            for i in range(50):
-                #choose a random color for the turtle
-                colorchoice = random.choice(colors)
-                #have the turtle take on the randomly chose color
-                t1.color(colorchoice)
-                #create circle
-                t1.circle(100)
-                t1.left(10)
-
-            #t1.done()
-            try:
-                t1.exitonclick()   
-            except Excpetion:
-                pass
-        else:
-            #color wheel
-            setup()
-            title("colorwheel")
-            t1 = Turtle()
-                        #do some basic setup for the turtle
-            #pick up the pen so no marks are left
-            t1.up()
-            #move the turtle to the left
-            t1.goto(-200,0)
-            #put the pen back down
-            t1.down()
-            #change the pen thickness
-            t1.width(2)
-            #hide the turtle icon
-            t1.hideturtle()
-            #set turtle speed to MAXIMUM (1-10 for specific speeds. 1 is slowest)
-            t1.speed(0)
-
-            #create a loop for the graphics to be built
-            for i in range(500):
-                #choose a random color for the turtle
-                colorchoice = random.choice(colors)
-                #have the turtle take on the randomly chose color
-                t1.color(colorchoice)
-                #move the turtle forward
-                t1.forward(400)
-                #have the turtle turn 181 degrees (anything over 180 works)
-                t1.right(181)
-
-            #t1.done() 
-            try:
-                t1.exitonclick()   
-            except Excpetion:
-                pass
-
-           
-            
-
+        draw_word(colors)
         
     
     
-=======
-        infer(model, FilePaths.fnInfer)
-        print('done')
-        return infer
->>>>>>> dd4c864796fc22fde4e234ed174af7acbc414cb4
+#=======
+       # infer(model, FilePaths.fnInfer)
+      #  print('done')
+    #    return infer
+#>>>>>>> dd4c864796fc22fde4e234ed174af7acbc414cb4
 
 
 if __name__ == '__main__':
