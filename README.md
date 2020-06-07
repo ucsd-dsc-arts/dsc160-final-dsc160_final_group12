@@ -67,7 +67,7 @@ This section should summarize your results and will embed links to documentation
 - audio files (`.wav`, `.mp3`)
 - written text as `.pdf`
 
-As our text recognition system was trained on names of objects, our results are most accurate when inputted with objects or words. The final visual output encapsulates the word as a whole, randomly choosing colored lines based on the color associations of each letter in the word. The shape of the output is also randomly chosen between a hexagram-spiral, spirograph, or a color wheel to provide variance in our outputs. Ultimately, our model results in a personalized experience -- each user’s individual handwriting is translated to text and then a final visual output. Even if two users enter the same word, the final visual output can vary due to the randomness in shapes.
+Provided below are examples of various words as input and their final visual outputs: 
 
 **Coffee**
 This specific input had a probability of 0.63 of describing the word “coffee”. The word “coffee” resulted in a hexagram-spiral containing the colors: yellow, white, and green.
@@ -80,6 +80,8 @@ This specific input had a probability of 0.89 of describing the word “covid”
  
 **DSC**
 Our model recognized this specific input as the word “1sC” with a probability of only 0.05. This is probably due to the fact that our text recognition model is trained on the names of objects. Since DSC is an acronym and not an actual word on its own, our model has a harder time translating the handwritten text. Due to this, we added numbers to our color dictionary in case our system mislabelled any handwritten letters as numbers. The word “1sC” resulted in a spirograph containing the colors: maroon and yellow.
+
+As our text recognition system was trained on names of objects, our results are most accurate when inputted with objects or words. The final visual output encapsulates the word as a whole, randomly choosing colored lines based on the color associations of each letter in the word. The shape of the output is also randomly chosen between a hexagram-spiral, spirograph, or a color wheel to provide variance in our outputs. Ultimately, our model results in a personalized experience -- each user’s individual handwriting is translated to text and then a final visual output. Even if two users enter the same word, the final visual output can vary due to the randomness in shapes.
 
 
 ## Discussion
