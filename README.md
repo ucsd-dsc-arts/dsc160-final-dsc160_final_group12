@@ -59,29 +59,36 @@ ingestion.py: Script that enables the user to hand write their own text, save it
 
 ## Results
 
-(30 points) 
+**Example: coffee**
 
-This section should summarize your results and will embed links to documentation to significant outputs. This should document both process and show artistic results. This can include figures, sound files, videos, bitmaps, as appropriate to your generative art idea. Each result should include a brief textual description, and all should be listed below: 
+<img src=results/inputs/coffee_input.png width=300>
 
-- image files (`.jpg`, `.png` or whatever else is appropriate)
-- audio files (`.wav`, `.mp3`)
-- written text as `.pdf`
-
-Provided below are examples of various words as input and their final visual outputs: 
-
-**Word: Coffee**
-![](results/inputs/coffee_input.png)
-![](results/outputs/coffee_visual.png)
+<img src=results/outputs/coffee_visual.png width=300>
 
 This specific input had a probability of 0.63 of describing the word “coffee”. The word “coffee” resulted in a hexagram-spiral containing the colors: yellow, white, and green.
 
-**Tools**
+**Example: tools**
+
+<img src=results/inputs/tools_input.png width=300>
+
+<img src=results/outputs/tools_visual.png width=300>
+
 This specific input had a probability of 0.91 of describing the word “tools”. The word “tools” resulted in a color wheel containing the colors: blue, white, and yellow.
  
-**Covid**
+**Example: covid**
+
+<img src=results/inputs/covid_input.png width=300>
+
+<img src=results/outputs/covid_visual.png width=300>
+
 This specific input had a probability of 0.89 of describing the word “covid”. The word “covid” resulted in a hexagram-spiral containing the colors: yellow, white, purple, and blue.
  
-**DSC**
+**Example: DSC**
+
+<img src=results/inputs/DSC_input.png width=400>
+
+<img src=results/outputs/DSC_visual.png width=400>
+
 Our model recognized this specific input as the word “1sC” with a probability of only 0.05. This is probably due to the fact that our text recognition model is trained on the names of objects. Since DSC is an acronym and not an actual word on its own, our model has a harder time translating the handwritten text. Due to this, we added numbers to our color dictionary in case our system mislabelled any handwritten letters as numbers. The word “1sC” resulted in a spirograph containing the colors: maroon and yellow.
 
 As our text recognition system was trained on names of objects, our results are most accurate when inputted with objects or words. The final visual output encapsulates the word as a whole, randomly choosing colored lines based on the color associations of each letter in the word. The shape of the output is also randomly chosen between a hexagram-spiral, spirograph, or a color wheel to provide variance in our outputs. Ultimately, our model results in a personalized experience -- each user’s individual handwriting is translated to text and then a final visual output. Even if two users enter the same word, the final visual output can vary due to the randomness in shapes.
