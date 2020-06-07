@@ -85,9 +85,9 @@ This specific input had a probability of 0.89 of describing the word “covid”
  
 **Example: DSC**
 
-<img src=results/inputs/DSC_input.png width=400>
+<img src=results/inputs/DSC_input.png width=300>
 
-<img src=results/outputs/DSC_visual.png width=400>
+<img src=results/outputs/DSC_visual.png width=300>
 
 Our model recognized this specific input as the word “1sC” with a probability of only 0.05. This is probably due to the fact that our text recognition model is trained on the names of objects. Since DSC is an acronym and not an actual word on its own, our model has a harder time translating the handwritten text. Due to this, we added numbers to our color dictionary in case our system mislabelled any handwritten letters as numbers. The word “1sC” resulted in a spirograph containing the colors: maroon and yellow.
 
