@@ -69,7 +69,10 @@ This section should summarize your results and will embed links to documentation
 
 Provided below are examples of various words as input and their final visual outputs: 
 
-**Coffee**
+**Word: Coffee**
+![](results/inputs/coffee_input.png)
+![](results/outputs/coffee_visual.png)
+
 This specific input had a probability of 0.63 of describing the word “coffee”. The word “coffee” resulted in a hexagram-spiral containing the colors: yellow, white, and green.
 
 **Tools**
