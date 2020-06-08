@@ -96,6 +96,15 @@ As our text recognition system was trained on names of objects, our results are 
 
 ## Discussion
 
+Our final project is an interactive tool that allows a user to translate their own writing to an abstract visual form. A text recognition system "reads" the input and then the Python turtle library is used to generate a drawing based on the word that was predicted by the model. The written text influences the colors used to produce the drawing, but the patterns are generated randomly. Our initial intention was to closely replicate the experience of an individual with synesthesia, but through experimentation our team decided to take a more artistic approach to the concept of color-text association.
+
+What makes this work unique is the translation from defined text to complete abstraction. Previous work such as the model created by Bock replicated synesthesia using a realistic approach, predicting a user's handwriting and coloring individual letters based on those predictions. Our approach is also systematic in the sense that a model is used to classify handwriting as accurately as possible, but the generative output cannot be predetermined as each user will see different results even with the same word input. Another distinction to note is our model for text recognition uses the entire word as an input, rather than individual letters.
+
+Synesthesia is a unique phenomenon to study as it manifests itself in many different forms. We only looked at one type for this project, color-grapheme synesthesia, where an individual associates colors with text perception. Other types include chromesthesia (association between color and sound), spatial sequence synesthesia (numbers and spatial depth), and auditory-tactile synesthesia (sound and touch sensation). The experience of having these conditions could be replicated using a similar approach to our own in future work.
+
+Our goal of this work was to explore the relationship between a real neurological condition and how it can be artificially reproduced using computational methods. The techniques studied could be applicable to scientific research in attempting to understand what these conditions are like for individuals who have them, as well as for creative use in generative art and music production.
+
+
 (30 points, three to five paragraphs)
 
 The first paragraph should be a short summary describing your results.
