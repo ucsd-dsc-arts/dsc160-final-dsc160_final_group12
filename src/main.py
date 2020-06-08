@@ -16,7 +16,6 @@ import random
 import pandas as pd
 import draw
 import socket
-import struct
 
 
 
@@ -119,24 +118,6 @@ def infer(model, fnImg):
     #return recognized, probability
 #>>>>>>> dd4c864796fc22fde4e234ed174af7acbc414cb4
 
-def is_loopback(host):
-    """
-    Checks the server the user is working from
-    """
-    loopback_checker = {
-        socket.AF_INET: lambda x: struct.unpack('!I', socket.inet_aton(x))[0] >> (32-8) == 127,
-        socket.AF_INET6: lambda x: x == '::1'
-    }
-    for family in (socket.AF_INET, socket.AF_INET6):
-        try:
-            r = socket.getaddrinfo(host, None, family, socket.SOCK_STREAM)
-        except socket.gaierror:
-            return False
-        for family, _, _, _, sockaddr in r:
-            if not loopback_checker[family](sockaddr[0]):
-                return False
-    return True
-
 
 def main():
     "main function"
@@ -202,10 +183,10 @@ def main():
         letters= list(word)
         colors=list((pd.Series(letters)).map(letter_color_map))
         print(colors)
-        if is_loopback('localhost'):
-            draw.draw_turtle_localhost(colors)
-        else:
+        if 'dsmlp' in socket.gethostname():
             draw.draw_turtle_datahub(colors)
+        else:
+            draw.draw_turtle_localhost(colors)
         
     
     
@@ -218,6 +199,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-    
-    
-
