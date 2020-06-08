@@ -49,6 +49,7 @@ Run the [Synesthesia_Tool.ipynb](src/Synesthesia_Tool.ipynb) notebook to use the
 [ingestion.py](src/ingestion.py): Script that enables the user to hand write their own text, save it, and upload it into the text recognition model. Resizes and manipulates the image autamitcally to conform to model requirements. Widgets are made available through the Holoviz and Bokeh Python libraries.
 
 **Generative**
+
 [draw.py](src/draw.py): Draws visualizations using a series of inputted colors. Uses the Turtle and Mobilechelonian Python libraries to draw the visualzations locally and on Datahub, respectively.
 
 **Model**
