@@ -42,6 +42,22 @@ In the final submission, this section will describe both the data you use for th
 
 ## Code
 
+Run the [Synesthesia_Tool.ipynb](src/Synesthesia_Tool.ipynb) notebook to use the final tool and generate your own results. For best performance, please run the noteook **locally** as the generation of the final visualization is both faster and nicer when compared to Datahub.
+
+**Data Acquisition/Preprocessing**
+
+[ingestion.py](src/ingestion.py): Script that enables the user to hand write their own text, save it, and upload it into the text recognition model. Resizes and manipulates the image autamitcally to conform to model requirements. Widgets are made available through the Holoviz and Bokeh Python libraries.
+
+**Generative**
+[draw.py](src/draw.py): Draws visualizations using a series of inputted colors. Uses the Turtle and Mobilechelonian Python libraries to draw the visualzations locally and on Datahub, respectively.
+
+**Model**
+
+[main.py](src/main.py): Main script. Runs text recognition model on image and produces a visualization.
+
+Other Python scripts and files: Borrowed code for text recognition neural network generation.
+
+
 (20 points)
 
 This section will link to the various code for your project (stored within this repository). Your code should be executable on datahub, should we choose to replicate your result. This includes code for: 
@@ -52,10 +68,6 @@ This section will link to the various code for your project (stored within this 
 - generative methods
 
 Link each of these items to your .ipynb or .py files within this seection, and provide a brief explanation of what the code does. Reading this section we should have a sense of how to run your code.
-
-**Data Acquisition/Preprocessing**
-
-ingestion.py: Script that enables the user to hand write their own text, save it, and upload it into the text recognition model. Resizes and manipulates the image autamitcally to conform to model requirements. Widgets are made available through the Holoviz and Bokeh Python libraries.
 
 ## Results
 
@@ -118,9 +130,15 @@ The subsequent paragraphs could address questions including:
 
 ## Team Roles
 
-Provide an account of individual members and their efforts/contributions to the specific tasks you accomplished.
+**Enrique**: Developed the widgets that are to be used by the user as well as its backend functionality. Handled various technical issues and enabled the tool to be used both locally and on Datahub. Connected the different components of the project to allow for a clean and user friendly tool.
 
 ## Technical Notes and Dependencies
+
+**Platform**
+
+The tool will run on both Datahub and locally. However, locally is recommended as the eventual visualization is both nicer and drawn faster. Datahub is unable to display a pop up window so the implementation of the drawing was different and restricted to the Mobilechelonian Python library which is a related but less powerful version of the Turtle library that can be used locally.
+
+**Additional Libraries:** turtle, mobilechelonian, panel, holoviews, bokeh, socket, editdistance, opencv-python. In case run locally, a [requirements.txt](requirements.txt) file was included.
 
 Any implementation details or notes we need to repeat your work. 
 - Additional libraries you are using for this project
