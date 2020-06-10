@@ -119,7 +119,7 @@ Our goal of this work was to explore the relationship between a real neurologica
 
 **Molly:** Worked on understanding and updating the HWT code to make it usable for our project. Tied together notebooks to find a way to generate colors from running just the one main method. Played around with different turtle libraries to find an in notebook option. Updated abstract, and wrote about the HWT model in the data and model section, tech/dependencies. 
 
-**Myra:**
+**Myra:** Researched synesthesia and related projects, wrote about results and future research in discussion section.
 
 **Alex:** Conducted initial research on synesthesia and commonly associated colors. Experimented with various inputs and wrote about results. 
 
