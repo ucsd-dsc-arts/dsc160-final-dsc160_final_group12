@@ -21,13 +21,6 @@ Our goal is to make an interactive widget through Python libraries like Holoviz 
 
 Through our project we hope to take both the technical and qualitative skills we have been shown in class and apply them to our area of interest. We will be using GAN to implement our project to help us gain a greater understanding of synthesia and how it affects the people around us. Many of the example projects shown in class help us understand different people and cultures through technology, which is exactly what we hope to achieve here. Synesthesia is an interesting condition to study as it provides insight into how the brain perceives things. It gives us a chance to see how people with this condition perceive the world, and helps us understand how the world can look very different to everyone. This project will also allow us to learn more about the condition, and the effects it has on different people. 
 
-**Works Cited**
-- Bock, Joel R. “A Deep Learning Model of Perception in Color-Letter Synesthesia.” 2017, doi:10.20944/preprints201712.0128.v1.
-- Laken, Paul van der. “Neural Synesthesia: GAN AI Dreaming of Music.” Paulvanderlaken.com, 30 Oct. 2019, paulvanderlaken.com/2019/10/29/neural-synthesia-gan-ai-dreaming-of-music/.
-- “Type Your Name.” What Color Is Your Name?, synesthesia.me/see-your-name.
-- Wu, Jun. “Synesthesia, An Inspiring Condition For AI Researchers.” Medium, Towards Data Science, 27 Jan. 2020, towardsdatascience.com/synesthesia-an-inspiring-condition-for-ai-researchers-10cd57708855.
-- Simner, Julia, and Angela E. Bain. “A Longitudinal Study of Grapheme-Color Synesthesia in Childhood: 6/7 Years to 10/11 Years.” Frontiers, Frontiers, 4 Sept. 2013, www.frontiersin.org/articles/10.3389/fnhum.2013.00603/full.
-
 ## Data and Model
 
 (10 points) 
@@ -168,3 +161,10 @@ The tool will run on both Datahub and locally. However, locally is recommended a
 - http://www.nicolasfournel.com/?page_id=125#comment-4827
 - https://www.frontiersin.org/articles/10.3389/fnhum.2013.00603/full
 - https://pdfs.semanticscholar.org/68d9/396eb744db2c586deec3d3fba250f7d33489.pdf
+
+## Works Cited
+- Bock, Joel R. “A Deep Learning Model of Perception in Color-Letter Synesthesia.” 2017, doi:10.20944/preprints201712.0128.v1.
+- Laken, Paul van der. “Neural Synesthesia: GAN AI Dreaming of Music.” Paulvanderlaken.com, 30 Oct. 2019, paulvanderlaken.com/2019/10/29/neural-synthesia-gan-ai-dreaming-of-music/.
+- “Type Your Name.” What Color Is Your Name?, synesthesia.me/see-your-name.
+- Wu, Jun. “Synesthesia, An Inspiring Condition For AI Researchers.” Medium, Towards Data Science, 27 Jan. 2020, towardsdatascience.com/synesthesia-an-inspiring-condition-for-ai-researchers-10cd57708855.
+- Simner, Julia, and Angela E. Bain. “A Longitudinal Study of Grapheme-Color Synesthesia in Childhood: 6/7 Years to 10/11 Years.” Frontiers, Frontiers, 4 Sept. 2013, www.frontiersin.org/articles/10.3389/fnhum.2013.00603/full.
