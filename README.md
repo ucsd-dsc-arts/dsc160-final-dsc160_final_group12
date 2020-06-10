@@ -39,6 +39,7 @@ After the Handwriting system processes the under inputted text, it is passed int
 
 The data we used for associating colors to letters is found within the article A Deep Learning Model of Perception in Color-Letter Synesthesia by Joel R Bock. This researcher also looked into creating a net to associate handwriting to common synesthesia colors. He was able to identify the most common colors a synesthesia patient may see for each letter. 
 
+There are three options for the outputted image: a color wheel, a hexogram spiral, and a spirograph. The different options are selected by random number generator, so each time you run the model you can get a slightly different output. 
 
 **User Handwritten Text:** Image of handwritten text that is created by the user and passed into the text recognition model.
 

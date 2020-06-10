@@ -6,7 +6,7 @@ import mobilechelonian
 def draw_turtle_localhost(colors):
     number= random.choice([0,1,2])
     if number==1:
-        #draw hexogram-sprial
+        #draw hexogram-spiral
         setup()
         title("hexogram sprial")
         t1 = Turtle()
