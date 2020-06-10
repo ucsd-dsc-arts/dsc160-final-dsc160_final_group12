@@ -32,16 +32,13 @@ Through our project we hope to take both the technical and qualitative skills we
 
 (10 points) 
 
-Our project utilizes libraries to make our project interactive with users. We used Holoviz and Ingestion libraries to create user generated text in a notebook, and save that image into our handwritten text recognition’s systems data directory. 
-In trying to create our predictor we began with doing some initial research. We were able to acquire a git repository with the code for a Handwritten Text Recognition System that utilizes TensorFlow. This code was published by Harald Scheidl in an article on Towards Data Science. The model uses a neural network to do word recognition. It takes an input image of width 128 and height 32, and passes it into convolutional neural network (CNN) layers, recurrent neural network (RNN) layers, and then uses Connectionist Temporal Classification (CTC) to decode the handwritten word into a string. The CNN layers are trained to extract the features of the letters through a 5 layer unit. The layers add channels to the output feature map of size 32x256 before calling the RNN. Inside the RNN, relevant information is propagated through the pipeline to create a matrix of size 32x80. This output matrix is passed into the CTC which computes the ground truth text and the loss value. The CTC decodes the matrix into the final text returned as a string.  This model has been trained on data from the IAM Handwriting data database from FKI: Research Group on Computer Vision and Artificial Intelligence out of the University of Bern in Switzerland.
-In this model, Tensorflow is used. One of the most difficult parts of using this code was that the tensorflow library it had been implemented with was outdated. The first step in using this code was going through the different files in the model and updating the code to the proper tensorflow imports. The model is broken into four components: Sample Processing, Data Loading, the Model, and a main file to execute all the steps together. The sample processor prepares the image dataset for the neural network while the data loader reads the samples, putting them into batches for the model to be trained on. The model file can be used for both training and inference, and the main method calls all the files to produce the recognized string a confidence score. We found that the model works best on common words, which has to do with the data it was trained on. Despite this, the model still has the ability to identify unknown words as it is trained to look at both the single letter and the combination of likely letters surrounding individual characters to predict the word. 
-After the Handwriting system processes the under inputted text, it is passed into our synthetic synesthesia art creator. In this part of the generative process, we break down the recognized text from the first part of the model into individual characters and associate a color to each letter. This is done by using the most common color associated with each character by synesthesia patients, so we can get a sense of the colors a typical person with synesthesia may see. To generate the art, we use the turtle package in python to draw colorful geometric shapes that can show the user the synesthesia colors is an aesthetically pleasing way. We have three different outputs which are randomly chosen from for each instance of a word.
+**User Handwritten Text:** Our project utilizes libraries to make our project interactive with users. We used Holoviz and Ingestion libraries to create user generated text in a notebook, and save that image into our handwritten text recognition’s systems data directory. 
 
-The data we used for associating colors to letters is found within the article A Deep Learning Model of Perception in Color-Letter Synesthesia by Joel R Bock. This researcher also looked into creating a net to associate handwriting to common synesthesia colors. He was able to identify the most common colors a synesthesia patient may see for each letter. 
+**Hand Written Text Recognizer:** We were able to acquire a [git repository](https://github.com/githubharald/SimpleHTR) with the code for a Handwritten Text Recognition System that utilizes TensorFlow. This code was published by Harald Scheidl in an article on Towards Data Science. The model uses a neural network to do word recognition. It takes an input image of width 128 and height 32, and passes it into convolutional neural network (CNN) layers, recurrent neural network (RNN) layers, and then uses Connectionist Temporal Classification (CTC) to decode the handwritten word into a string. The CNN layers are trained to extract the features of the letters through a 5 layer unit. The layers add channels to the output feature map of size 32x256 before calling the RNN. Inside the RNN, relevant information is propagated through the pipeline to create a matrix of size 32x80. This output matrix is passed into the CTC which computes the ground truth text and the loss value. The CTC decodes the matrix into the final text returned as a string.  This model has been trained on data from the IAM Handwriting data database from FKI: Research Group on Computer Vision and Artificial Intelligence out of the University of Bern in Switzerland. In this model, Tensorflow is used. One of the most difficult parts of using this code was that the tensorflow library it had been implemented with was outdated. The first step in using this code was going through the different files in the model and updating the code to the proper tensorflow imports. The model is broken into four components: Sample Processing, Data Loading, the Model, and a main file to execute all the steps together. The sample processor prepares the image dataset for the neural network while the data loader reads the samples, putting them into batches for the model to be trained on. The model file can be used for both training and inference, and the main method calls all the files to produce the recognized string a confidence score. We found that the model works best on common words, which has to do with the data it was trained on. Despite this, the model still has the ability to identify unknown words as it is trained to look at both the single letter and the combination of likely letters surrounding individual characters to predict the word. 
 
-There are three options for the outputted image: a color wheel, a hexogram spiral, and a spirograph. The different options are selected by random number generator, so each time you run the model you can get a slightly different output. 
+**Letter-Color Associations:** The data we used for associating colors to letters is found within the article A Deep Learning Model of Perception in Color-Letter Synesthesia by Joel R Bock. This researcher also looked into creating a net to associate handwriting to common synesthesia colors. He was able to identify the most common colors a synesthesia patient may see for each letter.  
 
-**User Handwritten Text:** Image of handwritten text that is created by the user and passed into the text recognition model.
+**Output Data:** After the Handwriting system processes the under inputted text, it is passed into our synthetic synesthesia art creator. In this part of the generative process, we break down the recognized text from the first part of the model into individual characters and associate a color to each letter. This is done by using the most common color associated with each character by synesthesia patients, so we can get a sense of the colors a typical person with synesthesia may see. To generate the art, we use the turtle package in python to draw colorful geometric shapes that can show the user the synesthesia colors is an aesthetically pleasing way. We have three different outputs which are randomly chosen from for each instance of a word.
 
 ## Code
 
@@ -59,21 +56,13 @@ Run the [Synesthesia_Tool.ipynb](src/Synesthesia_Tool.ipynb) notebook to use the
 
 [main.py](src/main.py): Main script. Runs text recognition model on image and produces a visualization.
 
-Other Python scripts and files: Borrowed code for text recognition neural network generation.
-
-
-(20 points)
-
-This section will link to the various code for your project (stored within this repository). Your code should be executable on datahub, should we choose to replicate your result. This includes code for: 
-
-- code for data acquisition/scraping
-- code for preprocessing
-- training code (if appropriate)
-- generative methods
-
-Link each of these items to your .ipynb or .py files within this seection, and provide a brief explanation of what the code does. Reading this section we should have a sense of how to run your code.
+Other Python scripts and files: Borrowed code for text recognition neural network generation from the github repositiory mentioned in the 'Data and Model' section.
 
 ## Results
+
+After the Handwriting system processes the under inputted text, it is passed into our synthetic synesthesia art creator. In this part of the generative process, we break down the recognized text from the first part of the model into individual characters and associate a color to each letter. This is done by using the most common color associated with each character by synesthesia patients, so we can get a sense of the colors a typical person with synesthesia may see. To generate the art, we use the turtle package in python to draw colorful geometric shapes that can show the user the synesthesia colors is an aesthetically pleasing way. We have three different outputs which are randomly chosen from for each instance of a word.
+
+There are three options for the outputted image: a color wheel, a hexogram spiral, and a spirograph. The different options are selected by random number generator, so each time you run the model you can get a slightly different output. 
 
 **Example: coffee**
 
@@ -152,6 +141,14 @@ The subsequent paragraphs could address questions including:
 
 **Enrique**: Developed the widgets that are to be used by the user as well as its backend functionality. Handled various technical issues and enabled the tool to be used both locally and on Datahub. Connected the different components of the project to allow for a clean and user friendly tool.
 
+**Molly:** Worked on understanding and updating the HWT code to make it usable for our project. Tied together notebooks to find a way to generate colors from running just the one main method. Played around with different turtle libraries to find an in notebook option. Updated abstract, and wrote about the HWT model in the data and model section, tech/dependencies. 
+
+**Myra:**
+
+**Alex:** Conducted initial research on synesthesia and commonly associated colors. Experimented with various inputs and wrote about results. 
+
+**Mariam:** Worked on the visual output section including turtle implementation, and researched other strategies. Wrote about data used and model for visual output in data and model section, as well as preliminary research on synesthesia and associated colors. 
+
 ## Technical Notes and Dependencies
 
 **Platform**
@@ -160,10 +157,6 @@ The tool will run on both Datahub and locally. However, locally is recommended a
 
 **Additional Libraries:** turtle, mobilechelonian, panel, holoviews, bokeh, socket, editdistance, opencv-python. In case run locally, a [requirements.txt](requirements.txt) file was included.
 
-Any implementation details or notes we need to repeat your work. 
-- Additional libraries you are using for this project
-- Does this code require other pip packages, software, etc?
-- Does this code need to run on some other (non-datahub) platform? (CoLab, etc.)
 
 ## Reference
 
