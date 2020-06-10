@@ -38,7 +38,7 @@ Through our project we hope to take both the technical and qualitative skills we
 
 **Letter-Color Associations:** The data we used for associating colors to letters is found within the article A Deep Learning Model of Perception in Color-Letter Synesthesia by Joel R Bock. This researcher also looked into creating a net to associate handwriting to common synesthesia colors. He was able to identify the most common colors a synesthesia patient may see for each letter.  
 
-**Output Data:** After the Handwriting system processes the under inputted text, it is passed into our synthetic synesthesia art creator. In this part of the generative process, we break down the recognized text from the first part of the model into individual characters and associate a color to each letter. This is done by using the most common color associated with each character by synesthesia patients, so we can get a sense of the colors a typical person with synesthesia may see. To generate the art, we use the turtle package in python to draw colorful geometric shapes that can show the user the synesthesia colors is an aesthetically pleasing way. We have three different outputs which are randomly chosen from for each instance of a word.
+**Output Data:** After the Handwriting system processes the under inputted text, it is passed into our synthetic synesthesia art creator. In this part of the generative process, we break down the recognized text from the first part of the model into individual characters and associate a color to each letter. This is done by using the most common color associated with each character by synesthesia patients, so we can get a sense of the colors a typical person with synesthesia may see. To generate the art, we use the turtle package in python to draw colorful geometric shapes that can show the user the synesthesia colors is an aesthetically pleasing way. We have three different outputs which are randomly chosen from for each instance of a word. There are three options for the outputted image: a color wheel, a hexogram spiral, and a spirograph. The different options are selected by random number generator, so each time you run the model you can get a slightly different output. 
 
 ## Code
 
@@ -59,10 +59,6 @@ Run the [Synesthesia_Tool.ipynb](src/Synesthesia_Tool.ipynb) notebook to use the
 Other Python scripts and files: Borrowed code for text recognition neural network generation from the github repositiory mentioned in the 'Data and Model' section.
 
 ## Results
-
-After the Handwriting system processes the under inputted text, it is passed into our synthetic synesthesia art creator. In this part of the generative process, we break down the recognized text from the first part of the model into individual characters and associate a color to each letter. This is done by using the most common color associated with each character by synesthesia patients, so we can get a sense of the colors a typical person with synesthesia may see. To generate the art, we use the turtle package in python to draw colorful geometric shapes that can show the user the synesthesia colors is an aesthetically pleasing way. We have three different outputs which are randomly chosen from for each instance of a word.
-
-There are three options for the outputted image: a color wheel, a hexogram spiral, and a spirograph. The different options are selected by random number generator, so each time you run the model you can get a slightly different output. 
 
 **Example: coffee**
 
