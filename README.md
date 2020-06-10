@@ -76,6 +76,8 @@ Link each of these items to your .ipynb or .py files within this seection, and p
 
 <img src=results/inputs/coffee_input.png width=300>
 
+<img src=results/outputs/coffee_output.png width=300>
+
 <img src=results/outputs/coffee_visual.png width=300>
 
 This specific input had a probability of 0.63 of describing the word “coffee”. The word “coffee” resulted in a hexagram-spiral containing the colors: yellow, white, and green.
@@ -83,6 +85,8 @@ This specific input had a probability of 0.63 of describing the word “coffee�
 **Example: tools**
 
 <img src=results/inputs/tools_input.png width=300>
+
+<img src=results/outputs/tools_output.png width=300>
 
 <img src=results/outputs/tools_visual.png width=300>
 
@@ -92,6 +96,8 @@ This specific input had a probability of 0.91 of describing the word “tools”
 
 <img src=results/inputs/covid_input.png width=300>
 
+<img src=results/outputs/covid_output.png width=300>
+
 <img src=results/outputs/covid_visual.png width=300>
 
 This specific input had a probability of 0.89 of describing the word “covid”. The word “covid” resulted in a hexagram-spiral containing the colors: yellow, white, purple, and blue.
@@ -99,6 +105,8 @@ This specific input had a probability of 0.89 of describing the word “covid”
 **Example: DSC**
 
 <img src=results/inputs/DSC_input.png width=300>
+
+<img src=results/outputs/DSC_output.png width=300>
 
 <img src=results/outputs/DSC_visual.png width=300>
 
