@@ -23,8 +23,6 @@ Through our project we hope to take both the technical and qualitative skills we
 
 ## Data and Model
 
-(10 points) 
-
 **User Handwritten Text:** Our project utilizes libraries to make our project interactive with users. We used Holoviz and Ingestion libraries to create user generated text in a notebook, and save that image into our handwritten text recognition’s systems data directory. 
 
 **Hand Written Text Recognizer:** We were able to acquire a [git repository](https://github.com/githubharald/SimpleHTR) with the code for a Handwritten Text Recognition System that utilizes TensorFlow. This code was published by Harald Scheidl in an article on Towards Data Science. The model uses a neural network to do word recognition. It takes an input image of width 128 and height 32, and passes it into convolutional neural network (CNN) layers, recurrent neural network (RNN) layers, and then uses Connectionist Temporal Classification (CTC) to decode the handwritten word into a string. The CNN layers are trained to extract the features of the letters through a 5 layer unit. The layers add channels to the output feature map of size 32x256 before calling the RNN. Inside the RNN, relevant information is propagated through the pipeline to create a matrix of size 32x80. This output matrix is passed into the CTC which computes the ground truth text and the loss value. The CTC decodes the matrix into the final text returned as a string.  This model has been trained on data from the IAM Handwriting data database from FKI: Research Group on Computer Vision and Artificial Intelligence out of the University of Bern in Switzerland. In this model, Tensorflow is used. 
@@ -114,17 +112,6 @@ Synesthesia is a unique phenomenon to study as it manifests itself in many diffe
 
 Our goal of this work was to explore the relationship between a real neurological condition and how it can be artificially reproduced using computational methods. The techniques studied could be applicable to scientific research in attempting to understand what these conditions are like for individuals who have them, as well as for creative use in generative art and music production.
 
-
-(30 points, three to five paragraphs)
-
-The first paragraph should be a short summary describing your results.
-
-The subsequent paragraphs could address questions including:
-- Why is this culturally innovative?
-- How does your generative computational approach differ from traditional art/music/cultural production? 
-- How do your results relate to broader social, cultural, economic political, etc., issues? 
-- What are the ethical concerns for this form of generative art? 
-- In what future directions could you expand this work?
 
 ## Team Roles
 
